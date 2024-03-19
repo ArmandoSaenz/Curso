@@ -7,11 +7,15 @@ namespace Ejemplo_3
         static void Main(string[] args)
         {
             string title = "Tercer script";
-            string mensaje = "¡HoLa MuNdO!";
-            string minusculas = mensaje.ToLower();
             Console.Title = title;
-            Console.WriteLine($"Mensaje original: {mensaje}");
-            Console.WriteLine($"Mensaje en minúsculas: {minusculas}");
+            //---------------------------------------------------------------
+            Console.Write("Ingresa una palabra o frase:");
+            string mensaje = Console.ReadLine();
+            string minusculas = mensaje.ToLower();
+            string mayusculas = mensaje.ToUpper();
+            Console.WriteLine($"Original: {mensaje}");
+            Console.WriteLine($"En Minúsculas: {minusculas}");
+            Console.WriteLine($"En Mayúsculas: {mayusculas}");
             Console.ReadLine();
         }
     }
